@@ -1,5 +1,3 @@
-
-
 /*In JavaScript, objects are king. If you understand objects, you understand JavaScript.
 
 In JavaScript, almost "everything" is an object.
@@ -37,7 +35,7 @@ Examples
     bigint
  */
 
-    /* 
+/* 
 Immutable
 
 Primitive values are immutable (they are hardcoded and cannot be changed).
@@ -47,10 +45,18 @@ if x = 3.14, you can change the value of x, but you cannot change the value of 3
 
 // Objects are Variables:
 // JavaScript variables can contain single values:
-let person = 'John Doe'
 
+let person = "John Doe";
+
+/*JavaScript variables can also contain many values.
+
+Objects are variables too. But objects can contain many values.
+
+Object values are written as name : value pairs (name and value 
+separated by a colon).*/
 
 //creating an object:
+// ! A JavaScript object is a collection of named values
 //It is a common practice to declare objects with the const keyword.
 
 const joe = {
@@ -58,36 +64,36 @@ const joe = {
   age: 23.9,
   job: "front end web developer & barista",
   location: "Egypt",
-}
+};
 
 console.log(joe);
 //reassignment the object:
 //Adding New Properties:
 
-joe.weight = 59
-console.log(joe["fullName"])
-console.log(joe.job)
+joe.weight = 59;
+console.log(joe["fullName"]);
+console.log(joe.job);
 
-console.log(joe)
+console.log(joe);
 
 // objects built-in methods/functions:
 
-console.log(joe.hasOwnProperty("gaol"))
-console.log(Object.keys(joe))
-console.log(Object.values(joe))
-console.log(Object.entries(joe))
+console.log(joe.hasOwnProperty("gaol"));
+console.log(Object.keys(joe));
+console.log(Object.values(joe));
+console.log(Object.entries(joe));
 
 //Accessing Object Properties:
 
-console.log(joe.location)
+console.log(joe.location);
 //or
-console.log(joe["job"])
+console.log(joe["job"]);
 
 // Deleting Properties:
 
-delete joe.weight
+delete joe.weight;
 //or
-delete joe["weight"]
+delete joe["weight"];
 console.log(joe);
 
 // Nested Objects
